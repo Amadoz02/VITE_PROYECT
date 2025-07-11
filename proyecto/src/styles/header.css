@@ -1,7 +1,4 @@
 
-/* ---------------------- */
-/* VARIABLES GLOBALES */
-/* ---------------------- */
 :root {
   --color-black: #ffffff;
   --color-white: #fff;
@@ -29,9 +26,7 @@
   --transition-fast: 0.3s ease;
 }
 
-/* -------------------------- */
-/* RESET & FUENTE GLOBAL */
-/* -------------------------- */
+
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -39,9 +34,7 @@
   padding: 0;
 }
 
-/* -------------------- */
-/* LAYOUT PRINCIPAL */
-/* -------------------- */
+
 .home {
   background-color: var(--color-black);
   display: grid;
@@ -53,9 +46,7 @@
   min-height: 100vh;
 }
 
-/* ---------------- */
-/* HEADER SUPERIOR */
-/* ---------------- */
+
 .home__header {
   align-items: center;
   background-color: var(--color-primary);
@@ -77,9 +68,7 @@
   color: var(--color-accent);
 }
 
-/* ------------------- */
-/* NAVEGACIÓN MENU */
-/* ------------------- */
+
 .header__nav {
   display: flex;
   flex-grow: 1;
@@ -120,9 +109,6 @@
   transition: background-color 0.8s, box-shadow 0.8s;
 }
 
-/* ---------------------- */
-/* LOGO PRINCIPAL */
-/* ---------------------- */
 .principal_header {
   align-items: center;
   display: flex;
@@ -157,9 +143,7 @@
   transition: filter 0.5s;
 }
 
-/* ----------------- */
-/* TEXTOS */
-/* ----------------- */
+
 .texto {
   color: var(--morado_oscuro);
   font-size: 1.3rem;
@@ -170,9 +154,7 @@ p.texto--blanco {
   color: var(--blanco);
 }
 
-/* ------------------ */
-/* BOTONES */
-/* ------------------ */
+
 .button {
   background-color: var(--morado_oscuro);
   border: none;

@@ -1,11 +1,13 @@
-import { rutas } from "../routes/Rutas";
-
+import { entrutador, rutas } from "../routes/Rutas.js";
+import { renderHeader } from "./header.js";
 
 
 window.addEventListener("hashchange", () => {
     const vista = location.hash.slice(1);
     validarVistas(vista);
 });
+const head=document.querySelector(".home__header");
+renderHeader(head);
 
 const validarVistas=async (vista)=>{
     try {
@@ -48,5 +50,6 @@ const cargaControler=(controlador)=>{
  window.addEventListener("DOMContentLoaded",()=>{
 
     const vista = location.hash.slice(1);
+    entrutador(vista);
     validarVistas(vista);
 });

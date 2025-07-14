@@ -1,4 +1,4 @@
-import { entrutador, rutas } from "../routes/Rutas.js";
+import { rutas } from "../routes/Rutas.js";
 import { renderHeader } from "./header.js";
 
 
@@ -50,6 +50,5 @@ const cargaControler=(controlador)=>{
  window.addEventListener("DOMContentLoaded",()=>{
 
     const vista = location.hash.slice(1);
-    entrutador(vista);
     validarVistas(vista);
 });

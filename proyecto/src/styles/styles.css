@@ -7,6 +7,7 @@
   --color-accent: #f3c622;
   --color-secondary: #0a3d3c;
   --color-overlay: rgba(0, 0, 0, 0.45);
+  --rojo:#b43232;
 
   --verde_claro: #c7f0db;
   --verde_claro_neon: #66FFB2;
@@ -272,6 +273,9 @@ button {
   transition: background-color var(--transition-fast);
   font-weight: 700;
 }
+.boton--eliminar{
+  background-color: var(--rojo);
+}
 
 .boton:hover,
 button:hover {
@@ -285,6 +289,7 @@ button:hover {
 table {
   width: 80%;
   max-width: 700px;
+  height: min-content;
   margin: 20px auto;
   border-collapse: collapse;
   font-family: var(--font-text);
@@ -299,21 +304,30 @@ thead {
   color: var(--blanco);
 }
 
-th, td {
+th {
   border: 1px solid var(--gris_claro);
   padding: 12px 16px;
   text-align: left;
   height: min-content;
 }
+td{
+  border: 1px solid var(--gris_claro);
+  padding: 10px;
+  height: 150px;
 
+
+}
+td:last-child{
+  max-height: min-content;
+  width: 200px;
+  
+}
 tr:nth-child(even) {
   background-color: var(--verde_claro);
 }
 
 a.texto {
   text-decoration: none;
-  min-width: 100%;
-  min-height: 100%;
   color: inherit;
 }
 

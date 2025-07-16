@@ -12,7 +12,7 @@ export async function rellenar() {
         }
         
         let content = `
-            <button class="boton boton--crear"><a href="#crear" class="texto">Agregar Nuevo</a></button>
+            <button class="boton boton--crear"><a href="#categorias/crear" class="texto">Agregar Nuevo</a></button>
             <table>
                 <thead>
                     <tr>
@@ -30,7 +30,7 @@ export async function rellenar() {
                     <td>${cat.nombre}</td>
                     <td>${cat.descripcion}</td>
                     <td>
-                        <button class="boton boton--editar"><a href="#actualizar" class="texto">Actualizar</a></button>
+                        <button class="boton boton--editar"><a href="#categorias/actualizar/" class="texto">Actualizar</a></button>
                         <button class="boton boton--eliminar">Eliminar</button>
                     </td>
                 </tr>
